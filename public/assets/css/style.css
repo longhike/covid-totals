@@ -1,11 +1,26 @@
+* {
+    background-image: none;
+}
+
 html, body {
-    background-image: url("https://dynaimage.cdn.cnn.com/cnn/digital-images/org/6cfc0b88-7523-4f8a-adbe-6deb2a148a34.jpg");
+    background-image: url("../images/display.jpg");
     color: white;
 }
 
+@media only screen and (max-width: 600px) {
+    html, body {
+        background-image: url("../images/mobile.png");
+        background-size: cover;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+}
 .card {
     border: none;
-    background: rgba(218, 204, 204, 0.4);
+    background: rgba(43, 43, 43, 0.4);
 }
 
 .body-holder {
