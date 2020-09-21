@@ -5,7 +5,6 @@ const path = require('path')
 const express = require('express');
 const apirouter = express.Router()
 const axios = require("axios");
-const { setTimeout } = require('timers');
 const _url = "https://covid-19-statistics.p.rapidapi.com/reports/total"
 const key = process.env.API_KEY
 
