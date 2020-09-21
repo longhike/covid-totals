@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Get Sad</title>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="body-holder">
+                        <h1>Ready to get super sad about COVID-19?</h1>
+                        <p>Enter the month and day below and click "Get Sad" to see the Johns Hopkins global data for the given month/day.</p>
+                        <p><strong>PLEASE NOTE:</strong> the first day for which JHU has data available is Jan 22, 2020.</p>
+                        
+                        <input type="text" id='month' placeholder='Month ("MM")'>
+                        <input type="text" id='day' placeholder='Day ("DD")'>
+                        <p id="warn" style="color: #f5da42;"></p>
+                        <button class='btn btn-primary' id='submit'>Get Sad</button>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="body-holder" id="results-card" style="display: none;">
+                        <p class="card-text" id="cases"></p>
+                        <p class="card-text" id="deaths"></p>
+                        <p class="card-text" id="recovered"></p>
+                        <p class="card-text" id="last-updated"></p>
+                        <p class="card-text">Hit "Clear" to empty the search results (or just search for a different date)</p>
+                        <button class='btn btn-warning' id='clear'>Clear Results</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <br>
+    </div>
+    
+
+    
+    <script src='./assets/js/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+html, body {
+    background-image: url("https://dynaimage.cdn.cnn.com/cnn/digital-images/org/6cfc0b88-7523-4f8a-adbe-6deb2a148a34.jpg");
+    color: white;
+}
+
+.card {
+    border: none;
+    background: rgba(218, 204, 204, 0.4);
+}
+
+.body-holder {
+    margin: 10px;
+}
