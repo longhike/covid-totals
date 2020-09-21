@@ -33,15 +33,12 @@ $(document).ready(function () {
     // ***************** FUNCTIONS *****************
     // handles total request/response
     function runRequest() {
-        console.log(date);
         if (warn.innerText !== '') {
             return
         };
         fetch("/api/covid?date=" + date)
             .then(res => res.json())
             .then((res) => {
-                console.log("success!")
-                console.log(typeof res);
                 if (res.date === undefined) {
                     clearDivs()
                     warn.innerText = 'This is not a valid entry. Please use a valid month and date.'

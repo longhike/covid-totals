@@ -22,11 +22,7 @@ apirouter
       "params": req.query
     })
       .then((response) => {
-        console.log(response.status);
         let resObj = response.data.data
-
-        console.log(resObj)
-
         res.json(resObj)
       })
       .catch((error) => {
